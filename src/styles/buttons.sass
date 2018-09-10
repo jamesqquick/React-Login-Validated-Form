@@ -1,0 +1,17 @@
+input[type='submit'], button
+    padding: 8px 15px
+    background-color: $primary-color
+    border: 1px solid $primary-color
+    color: white
+
+input[type='submit']:disabled, button:disabled
+    cursor: not-allowed
+    background-color: transparentize($primary-color, 0.4)
+
+input[type='submit']:disabled:hover, button:disabled:hover
+    cursor: not-allowed
+    background-color: transparentize($primary-color, 0.4)
+
+input[type='submit']:hover, button:hover
+    cursor: pointer
+    background-color: darken($primary-color, 10)
